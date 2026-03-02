@@ -11,7 +11,7 @@ const SinglePlayer = ({ Player }) => {
   } = Player || {};
 
   return (
-    <div className="card bg-base-100 border border-gray-200 p-6 shadow-sm rounded-2xl w-full">
+    <div className="card  border border-gray-200 p-6 rounded-2xl w-full">
       {/* Player Image */}
       <img
         src={image}
@@ -26,7 +26,7 @@ const SinglePlayer = ({ Player }) => {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            className="w-7 h-7 text-gray-700"
+            className="w-7 h-7 text-gray-600"
           >
             <path
               fillRule="evenodd"
@@ -34,7 +34,7 @@ const SinglePlayer = ({ Player }) => {
               clipRule="evenodd"
             />
           </svg>
-          <h2 className="text-xl font-bold text-gray-900">{name}</h2>
+          <h2 className="text-xl font-bold text-gray-800">{name}</h2>
         </div>
 
         {/* Country and Role section */}
@@ -54,7 +54,7 @@ const SinglePlayer = ({ Player }) => {
             </svg>
             <span>{country}</span>
           </div>
-          <span className="px-4 py-2 bg-gray-100 rounded-lg text-sm text-gray-700 font-medium">
+          <span className="px-4 py-2 bg-gray-100 rounded-lg text-sm text-gray-600 font-medium">
             {role}
           </span>
         </div>
@@ -64,18 +64,21 @@ const SinglePlayer = ({ Player }) => {
 
         {/* Details section */}
         <div className="flex flex-col gap-3">
-          <h4 className="font-bold text-gray-900 text-base">Rating</h4>
+          <div className="flex justify-between items-center">
+            <h4 className="font-semibold text-gray-800 text-base">Rating</h4>
+            <span className="font-semibold text-gray-600">{rating}/10</span>
+          </div>
 
           <div className="flex justify-between items-center text-sm mb-1">
-            <span className="font-bold text-gray-900">{battingStyle}</span>
+            <span className="font-semibold text-gray-800">{battingStyle}</span>
             <span className="text-gray-500 font-medium">{bowlingStyle}</span>
           </div>
 
           <div className="flex justify-between items-center mt-1">
-            <span className="font-bold text-gray-900 text-sm">
+            <span className="font-semibold text-gray-800 text-sm">
               Price: ${price}
             </span>
-            <button className="px-4 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-800 hover:bg-gray-50 transition-colors">
+            <button className="cursor-pointer px-4 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors">
               Choose Player
             </button>
           </div>
