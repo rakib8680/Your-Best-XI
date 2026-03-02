@@ -18,7 +18,7 @@ const AvailablePlayers = ({ PlayersPromise }) => {
           </button>
         </div>
       </div>
-      <div>
+      <div className="grid grid-cols-4 gap-5">
         {AvailablePlayers.map((Player) => (
           <SinglePlayer key={Player.id} Player={Player} />
         ))}
