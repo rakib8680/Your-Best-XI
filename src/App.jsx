@@ -2,6 +2,7 @@ import { Suspense, useState } from "react";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import AvailablePlayers from "./components/Players/AvailablePlayers";
+import PlayerCardsSkeleton from "./components/Players/PlayerCardsSkeleton";
 
 const App = () => {
   const PlayersPromise = fetch("/players.json").then((res) => res.json());
@@ -29,7 +30,7 @@ const App = () => {
           </button>
         </div>
       </div>
-      <Suspense fallback={<div className="min-h-screen">Loading...</div>}>
+      <Suspense fallback={<PlayerCardsSkeleton />}>
         <AvailablePlayers PlayersPromise={PlayersPromise} />
       </Suspense>
     </div>
