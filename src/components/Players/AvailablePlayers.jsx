@@ -7,10 +7,13 @@ const AvailablePlayers = ({ PlayersPromise, handleSelectPlayer }) => {
 
   return (
     <div className="">
-     
-      <div className=" mt-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5">
+      <div className=" my-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5">
         {AvailablePlayers.map((Player) => (
-          <SinglePlayer key={Player.id} Player={Player} handleSelectPlayer={handleSelectPlayer} />
+          <SinglePlayer
+            key={Player.id}
+            Player={Player}
+            handleSelectPlayer={handleSelectPlayer}
+          />
         ))}
       </div>
     </div>

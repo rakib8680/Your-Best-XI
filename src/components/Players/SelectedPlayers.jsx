@@ -1,4 +1,4 @@
-const SelectedPlayers = ({ selectedPlayers }) => {
+const SelectedPlayers = ({ selectedPlayers, setToggleButton }) => {
   return (
     <>
       {selectedPlayers.length === 0 ? (
