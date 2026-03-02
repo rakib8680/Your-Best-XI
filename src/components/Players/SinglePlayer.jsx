@@ -1,4 +1,4 @@
-const SinglePlayer = ({ Player }) => {
+const SinglePlayer = ({ Player, handleSelectPlayer }) => {
   const {
     name,
     country,
@@ -11,7 +11,7 @@ const SinglePlayer = ({ Player }) => {
   } = Player || {};
 
   return (
-    <div className="card  border border-gray-200 p-6 rounded-2xl w-full">
+    <div className="card  border border-gray-200 p-6 rounded-2xl w-full shadow-xs">
       {/* Player Image */}
       <img
         src={image}
@@ -78,7 +78,10 @@ const SinglePlayer = ({ Player }) => {
             <span className="font-semibold text-gray-800 text-sm">
               Price: ${price}
             </span>
-            <button className="cursor-pointer px-4 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors">
+            <button
+              onClick={() => handleSelectPlayer(Player)}
+              className="cursor-pointer px-4 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors"
+            >
               Choose Player
             </button>
           </div>
