@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "name": "Virat Kohli",
+    "country": "India",
+    "role": "Batsman",
+    "battingStyle": "Right-Hand Bat",
+    "bowlingStyle": "Right-Arm Medium",
+    "rating": 9.8,
+    "price": 1500000,
+    "image": "https://static.vecteezy.com/system/resources/previews/053/806/038/non_2x/cricket-players-in-action-cricket-silhouette-free-vector.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Babar Azam",
+    "country": "Pakistan",
+    "role": "Batsman",
+    "battingStyle": "Right-Hand Bat",
+    "bowlingStyle": "Right-Arm Off Break",
+    "rating": 9.5,
+    "price": 1300000,
+    "image": "https://static.vecteezy.com/system/resources/previews/053/806/038/non_2x/cricket-players-in-action-cricket-silhouette-free-vector.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Joe Root",
+    "country": "England",
+    "role": "All-Rounder",
+    "battingStyle": "Right-Hand Bat",
+    "bowlingStyle": "Right-Arm Off Break",
+    "rating": 9.2,
+    "price": 1250000,
+    "image": "https://static.vecteezy.com/system/resources/previews/053/806/038/non_2x/cricket-players-in-action-cricket-silhouette-free-vector.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Kane Williamson",
+    "country": "New Zealand",
+    "role": "Batsman",
+    "battingStyle": "Right-Hand Bat",
+    "bowlingStyle": "Right-Arm Off Break",
+    "rating": 9.3,
+    "price": 1200000,
+    "image": "https://static.vecteezy.com/system/resources/previews/053/806/038/non_2x/cricket-players-in-action-cricket-silhouette-free-vector.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Ben Stokes",
+    "country": "England",
+    "role": "All-Rounder",
+    "battingStyle": "Left-Hand Bat",
+    "bowlingStyle": "Right-Arm Fast Medium",
+    "rating": 9.6,
+    "price": 1450000,
+    "image": "https://static.vecteezy.com/system/resources/previews/053/806/038/non_2x/cricket-players-in-action-cricket-silhouette-free-vector.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Shakib Al Hasan",
+    "country": "Bangladesh",
+    "role": "All-Rounder",
+    "battingStyle": "Left-Hand Bat",
+    "bowlingStyle": "Slow Left Arm Orthodox",
+    "rating": 9.4,
+    "price": 1100000,
+    "image": "https://static.vecteezy.com/system/resources/previews/053/806/038/non_2x/cricket-players-in-action-cricket-silhouette-free-vector.jpg"
+  },
+  {
+    "id": 7,
+    "name": "David Warner",
+    "country": "Australia",
+    "role": "Batsman",
+    "battingStyle": "Left-Hand Bat",
+    "bowlingStyle": "Right-Arm Leg Break",
+    "rating": 9.3,
+    "price": 1350000,
+    "image": "https://static.vecteezy.com/system/resources/previews/053/806/038/non_2x/cricket-players-in-action-cricket-silhouette-free-vector.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Pat Cummins",
+    "country": "Australia",
+    "role": "Bowler",
+    "battingStyle": "Right-Hand Bat",
+    "bowlingStyle": "Right-Arm Fast",
+    "rating": 9.5,
+    "price": 1400000,
+    "image": "https://static.vecteezy.com/system/resources/previews/053/806/038/non_2x/cricket-players-in-action-cricket-silhouette-free-vector.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Trent Boult",
+    "country": "New Zealand",
+    "role": "Bowler",
+    "battingStyle": "Right-Hand Bat",
+    "bowlingStyle": "Left-Arm Fast Medium",
+    "rating": 9.1,
+    "price": 1050000,
+    "image": "https://static.vecteezy.com/system/resources/previews/053/806/038/non_2x/cricket-players-in-action-cricket-silhouette-free-vector.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Rashid Khan",
+    "country": "Afghanistan",
+    "role": "Bowler",
+    "battingStyle": "Right-Hand Bat",
+    "bowlingStyle": "Right-Arm Leg Break",
+    "rating": 9.7,
+    "price": 1500000,
+    "image": "https://static.vecteezy.com/system/resources/previews/053/806/038/non_2x/cricket-players-in-action-cricket-silhouette-free-vector.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Quinton de Kock",
+    "country": "South Africa",
+    "role": "Wicketkeeper Batsman",
+    "battingStyle": "Left-Hand Bat",
+    "bowlingStyle": "None",
+    "rating": 9.2,
+    "price": 1150000,
+    "image": "https://static.vecteezy.com/system/resources/previews/053/806/038/non_2x/cricket-players-in-action-cricket-silhouette-free-vector.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Kagiso Rabada",
+    "country": "South Africa",
+    "role": "Bowler",
+    "battingStyle": "Left-Hand Bat",
+    "bowlingStyle": "Right-Arm Fast",
+    "rating": 9.4,
+    "price": 1250000,
+    "image": "https://static.vecteezy.com/system/resources/previews/053/806/038/non_2x/cricket-players-in-action-cricket-silhouette-free-vector.jpg"
+  }
+]
