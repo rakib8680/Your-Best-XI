@@ -1,4 +1,8 @@
-const SelectedPlayers = ({ selectedPlayers, setToggleButton }) => {
+const SelectedPlayers = ({
+  selectedPlayers,
+  setToggleButton,
+  handleRemovePlayer,
+}) => {
   return (
     <>
       {selectedPlayers.length === 0 ? (
@@ -36,7 +40,10 @@ const SelectedPlayers = ({ selectedPlayers, setToggleButton }) => {
               </div>
 
               {/* Right: Delete Icon */}
-              <button className="cursor-pointer text-red-400 hover:text-red-500 transition-colors">
+              <button
+                onClick={() => handleRemovePlayer(player)}
+                className="cursor-pointer text-red-400 hover:text-red-500 transition-colors"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"

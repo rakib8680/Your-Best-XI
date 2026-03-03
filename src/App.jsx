@@ -28,6 +28,12 @@ const App = () => {
     setBudget(budget - player.price);
   };
 
+  const handleRemovePlayer = (player) => {
+    const remainingPlayers = selectedPlayers.filter((p) => p.id !== player.id);
+    setSelectedPlayers(remainingPlayers);
+    setBudget(budget + player.price);
+  };
+
   return (
     <>
       <div className="container mx-auto">
@@ -67,6 +73,7 @@ const App = () => {
             <SelectedPlayers
               selectedPlayers={selectedPlayers}
               setToggleButton={setToggleButton}
+              handleRemovePlayer={handleRemovePlayer}
             />
           )}
         </Suspense>
