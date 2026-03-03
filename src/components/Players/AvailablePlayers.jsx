@@ -1,7 +1,11 @@
 import { use } from "react";
 import SinglePlayer from "./SinglePlayer";
 
-const AvailablePlayers = ({ PlayersPromise, handleSelectPlayer }) => {
+const AvailablePlayers = ({
+  PlayersPromise,
+  handleSelectPlayer,
+  selectedPlayers,
+}) => {
   const AvailablePlayers = use(PlayersPromise);
   //   console.log(AvailablePlayers);
 
@@ -13,6 +17,7 @@ const AvailablePlayers = ({ PlayersPromise, handleSelectPlayer }) => {
             key={Player.id}
             Player={Player}
             handleSelectPlayer={handleSelectPlayer}
+            isSelected={selectedPlayers.some((p) => p.id === Player.id)}
           />
         ))}
       </div>

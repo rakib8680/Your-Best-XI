@@ -1,4 +1,4 @@
-const SinglePlayer = ({ Player, handleSelectPlayer }) => {
+const SinglePlayer = ({ Player, handleSelectPlayer, isSelected }) => {
   const {
     name,
     country,
@@ -80,9 +80,10 @@ const SinglePlayer = ({ Player, handleSelectPlayer }) => {
             </span>
             <button
               onClick={() => handleSelectPlayer(Player)}
-              className="cursor-pointer px-4 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors"
+              disabled={isSelected}
+              className={`px-4 py-2 border border-gray-300 rounded-lg text-sm font-medium transition-colors ${isSelected ? "bg-gray-200 text-gray-500 cursor-not-allowed" : "text-gray-700 hover:bg-gray-50 cursor-pointer"}`}
             >
-              Choose Player
+              {isSelected ? "Selected" : "Choose Player"}
             </button>
           </div>
         </div>

@@ -54,6 +54,7 @@ const App = () => {
           <AvailablePlayers
             PlayersPromise={PlayersPromise}
             handleSelectPlayer={handleSelectPlayer}
+            selectedPlayers={selectedPlayers}
           />
         ) : (
           <SelectedPlayers selectedPlayers={selectedPlayers} setToggleButton={setToggleButton} />
