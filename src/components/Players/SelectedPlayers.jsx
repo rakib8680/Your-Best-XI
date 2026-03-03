@@ -56,14 +56,16 @@ const SelectedPlayers = ({ selectedPlayers, setToggleButton }) => {
           ))}
 
           {/* Add More Player Button */}
-          <div className="border p-1 border-[#E6FB29] rounded-2xl  w-fit">
-            <button
-              onClick={() => setToggleButton("available")}
-              className="btn w-fit px-4 py-6 bg-[#E6FB29] hover:bg-[#d4e826] border-none text-black text-base font-bold rounded-xl"
-            >
-              Add More
-            </button>
-          </div>
+          {selectedPlayers.length < 6 && (
+            <div className="border p-1 border-[#E6FB29] rounded-2xl  w-fit">
+              <button
+                onClick={() => setToggleButton("available")}
+                className="btn w-fit px-4 py-6 bg-[#E6FB29] hover:bg-[#d4e826] border-none text-black text-base font-bold rounded-xl"
+              >
+                Add More
+              </button>
+            </div>
+          )}
         </div>
       )}
     </>

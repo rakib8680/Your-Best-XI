@@ -9,22 +9,27 @@ const App = () => {
   const PlayersPromise = fetch("/players.json").then((res) => res.json());
   const [toggleButton, setToggleButton] = useState("available");
   const [selectedPlayers, setSelectedPlayers] = useState([]);
+  const [budget, setBudget] = useState(9000000);
 
   // Handle Select Player
   const handleSelectPlayer = (player) => {
     if (selectedPlayers.find((p) => p.id === player.id)) {
       return;
     }
-    if (selectedPlayers.length === 11) {
+    if (selectedPlayers.length === 6) {
+      return;
+    }
+    if (budget < player.price) {
       return;
     }
     setSelectedPlayers([...selectedPlayers, player]);
+    setBudget(budget - player.price);
   };
 
   // console.log(selectedPlayers);
   return (
     <div className="container mx-auto">
-      <Navbar />
+      <Navbar budget={budget} />
       <Hero />
 
       {/* Players Section */}
@@ -57,7 +62,10 @@ const App = () => {
             selectedPlayers={selectedPlayers}
           />
         ) : (
-          <SelectedPlayers selectedPlayers={selectedPlayers} setToggleButton={setToggleButton} />
+          <SelectedPlayers
+            selectedPlayers={selectedPlayers}
+            setToggleButton={setToggleButton}
+          />
         )}
       </Suspense>
     </div>

@@ -1,6 +1,6 @@
 import logo from "../assets/logo.png";
 
-const Navbar = () => {
+const Navbar = ({ budget }) => {
   return (
     <div className="navbar mt-10">
       <div className="flex justify-between w-full">
@@ -25,7 +25,7 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="border border-gray-200 rounded-xl px-4 py-3">
-            <p className="font-semibold text-lg">0 Coin 🪙</p>
+            <p className="font-semibold text-lg">{budget} Coin 🪙</p>
           </div>
         </div>
       </div>
