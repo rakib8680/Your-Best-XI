@@ -7,7 +7,6 @@ const AvailablePlayers = ({
   selectedPlayers,
 }) => {
   const AvailablePlayers = use(PlayersPromise);
-  //   console.log(AvailablePlayers);
 
   return (
     <div className="">
