@@ -1,16 +1,89 @@
-# React + Vite
+# 🏏 BPL Dream 11 — Build Your Ultimate Cricket Team
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fun, interactive cricket team builder where you assemble your dream squad of 11 players within a given budget. Built with React 19 and styled with Tailwind CSS 4 + DaisyUI.
 
-Currently, two official plugins are available:
+## 🔗 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🌐 [BPL Dream 11](https://bpl-dream-11.vercel.app)
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Player Selection** — Browse a roster of 12 international cricket players and pick up to 6 for your squad.
+- **Budget Management** — Start with 9,000,000 coins. Each player costs differently — plan wisely!
+- **Smart Validations** — Prevents duplicate selections, exceeding squad limit, or overspending budget.
+- **Toast Notifications** — Rich toast alerts (via Sonner) for every interaction: selection, removal, errors, and budget refunds.
+- **Double Toast on Removal** — Removing a player shows both a removal confirmation and a budget refund notification.
+- **Toggle View** — Switch between "Available Players" and "Selected Players" tabs.
+- **Skeleton Loading** — Suspense-based loading skeletons while player data is fetched.
+- **Newsletter Subscription** — A beautiful gradient newsletter card overlapping the footer.
+- **Responsive Design** — Fully responsive layout across desktop, tablet, and mobile.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Technology         | Purpose                                |
+| ------------------ | -------------------------------------- |
+| **React 19**       | UI framework with hooks & Suspense     |
+| **Vite 7**         | Lightning-fast build tool & dev server |
+| **Tailwind CSS 4** | Utility-first CSS framework            |
+| **DaisyUI 5**      | Tailwind component library             |
+| **Sonner**         | Toast notification system              |
+
+## 📁 Project Structure
+
+```
+src/
+├── assets/                  # Images & static assets
+│   ├── banner-main.png
+│   ├── bg-shadow.png
+│   ├── logo.png
+│   └── logo-footer.png
+├── components/
+│   ├── Footer/
+│   │   ├── Footer.jsx       # Footer with links & subscribe
+│   │   └── NewsletterCard.jsx # Gradient newsletter section
+│   ├── Players/
+│   │   ├── AvailablePlayers.jsx   # Grid of available players
+│   │   ├── SelectedPlayers.jsx    # Selected squad list
+│   │   ├── SinglePlayer.jsx       # Individual player card
+│   │   └── PlayerCardsSkeleton.jsx # Loading skeleton
+│   ├── Hero.jsx              # Hero banner section
+│   └── Navbar.jsx            # Top navigation with budget
+├── App.jsx                   # Main app with state & logic
+├── main.jsx                  # Entry point with Toaster
+└── index.css                 # Global styles
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- **Node.js** v18 or higher
+- **npm** v9 or higher
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/rakib8680/BPL-Dream-11.git
+
+# Navigate to the project
+cd BPL-Dream-11
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+The app will be running at `http://localhost:5173`
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+## 📬 Contact
+
+Made with ❤️ by **Rakib**

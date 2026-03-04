@@ -33,6 +33,7 @@ const App = () => {
     toast.success(`🏏 ${player.name} added to your squad!`);
   };
 
+ // 
   const handleRemovePlayer = (player) => {
     const remainingPlayers = selectedPlayers.filter((p) => p.id !== player.id);
     setSelectedPlayers(remainingPlayers);
