@@ -4,7 +4,7 @@ A fun, interactive cricket team builder where you assemble your dream squad of 1
 
 ## 🔗 Live Demo
 
-🌐 [BPL Dream 11](https://bpl-dream-11.vercel.app)
+🌐 [BPL Dream 11](https://bpl-dream-xi-alpha.vercel.app)
 
 ## ✨ Features
 

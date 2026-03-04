@@ -33,7 +33,7 @@ const App = () => {
     toast.success(`🏏 ${player.name} added to your squad!`);
   };
 
- // 
+  //
   const handleRemovePlayer = (player) => {
     const remainingPlayers = selectedPlayers.filter((p) => p.id !== player.id);
     setSelectedPlayers(remainingPlayers);
@@ -44,26 +44,26 @@ const App = () => {
 
   return (
     <>
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4">
         <Navbar budget={budget} />
         <Hero />
 
         {/* Players Section */}
-        <div className="mt-24 flex justify-between items-center">
-          <h1 className="text-3xl font-bold">
+        <div className="mt-12 md:mt-24 flex flex-col md:flex-row gap-4 md:gap-0 justify-between items-start md:items-center">
+          <h1 className="text-xl md:text-3xl font-bold">
             {toggleButton === "available"
               ? `Available Players`
               : `Selected Players (${selectedPlayers.length}/6)`}
           </h1>
           <div>
             <button
-              className={`btn w-fit p-6 px-7 border border-gray-200 text-black text-base font-bold rounded-s-xl ${toggleButton === "available" ? "bg-[#E6FB29] hover:bg-[#d4e826]" : "btn-ghost font-normal"}`}
+              className={`btn w-fit p-4 md:p-6 px-5 md:px-7 border border-gray-200 text-black text-sm md:text-base font-bold rounded-s-xl ${toggleButton === "available" ? "bg-[#E6FB29] hover:bg-[#d4e826]" : "btn-ghost font-normal"}`}
               onClick={() => setToggleButton("available")}
             >
               Available
             </button>
             <button
-              className={`btn w-fit p-6 px-7 border border-gray-200 text-black text-base font-bold rounded-e-xl ${toggleButton === "selected" ? "bg-[#E6FB29] hover:bg-[#d4e826]" : "btn-ghost font-normal"}`}
+              className={`btn w-fit p-4 md:p-6 px-5 md:px-7 border border-gray-200 text-black text-sm md:text-base font-bold rounded-e-xl ${toggleButton === "selected" ? "bg-[#E6FB29] hover:bg-[#d4e826]" : "btn-ghost font-normal"}`}
               onClick={() => setToggleButton("selected")}
             >
               Selected ({selectedPlayers.length})

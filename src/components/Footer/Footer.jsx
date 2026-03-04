@@ -81,7 +81,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Copyright */}
-      <div className="mt-16 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+      <div className="mt-16 pt-8 border-t border-gray-800 text-center text-gray-500 text-xs md:text-sm px-4">
         <p>@2024 Your Company All Rights Reserved.</p>
       </div>
     </footer>

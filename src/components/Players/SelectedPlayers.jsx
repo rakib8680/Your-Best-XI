@@ -22,27 +22,29 @@ const SelectedPlayers = ({
           {selectedPlayers.map((player) => (
             <div
               key={player.id}
-              className="flex items-center justify-between border border-gray-200 rounded-xl px-6 py-5 shadow-xs"
+              className="flex items-center justify-between border border-gray-200 rounded-xl px-4 md:px-6 py-4 md:py-5 shadow-xs"
             >
               {/* Left: Image + Info */}
-              <div className="flex items-center gap-5">
+              <div className="flex items-center gap-3 md:gap-5">
                 <img
                   src={player.image}
                   alt={player.name}
-                  className="w-20 h-20 rounded-lg object-cover bg-gray-200 p-1"
+                  className="w-14 h-14 md:w-20 md:h-20 rounded-lg object-cover bg-gray-200 p-1"
                 />
                 <div>
-                  <h3 className="text-lg font-bold text-gray-800">
+                  <h3 className="text-base md:text-lg font-bold text-gray-800">
                     {player.name}
                   </h3>
-                  <p className="text-sm text-gray-500">{player.battingStyle}</p>
+                  <p className="text-xs md:text-sm text-gray-500">
+                    {player.battingStyle}
+                  </p>
                 </div>
               </div>
 
               {/* Right: Delete Icon */}
               <button
                 onClick={() => handleRemovePlayer(player)}
-                className="cursor-pointer text-red-400 hover:text-red-500 transition-colors"
+                className="cursor-pointer text-red-400 hover:text-red-500 transition-colors ml-2"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +52,7 @@ const SelectedPlayers = ({
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="w-6 h-6"
+                  className="w-5 h-5 md:w-6 md:h-6"
                 >
                   <path
                     strokeLinecap="round"
