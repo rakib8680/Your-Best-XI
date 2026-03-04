@@ -2,7 +2,7 @@ import logoFooter from "../../assets/logo-footer.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#06091A] text-white pt-40 pb-12 mt-10">
+    <footer className="bg-[#06091A] text-white pt-48 pb-12 mt-10">
       {/* Logo Section */}
       <div className="flex justify-center mb-16">
         <img src={logoFooter} alt="Logo" className="w-[140px]" />
